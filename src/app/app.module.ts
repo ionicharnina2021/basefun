@@ -1,14 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+import { TerceroComponent } from './tercero/tercero.component';
+import { CosicaModule } from './cosica/cosica.module';
+import { RedefineModule } from './redefine/redefine.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TerceroComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CosicaModule,
+    RedefineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
